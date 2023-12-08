@@ -1,0 +1,1159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+/* .subNabBox {
+  display: flex;
+  justify-content: flex-end;
+} */
+/* header {
+  position: relative;
+} */
+/* 
+main {
+  position: relative;
+} */
+
+/* TOOLS */
+
+.subNabBox {
+  /* width: 100%;
+  height: 100vh; */
+  margin-bottom: 2rem;
+  /* position: absolute; */
+  display: block;
+}
+.navListItem {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+
+.navListBtn {
+  font-size: 3rem;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+.btnIconBox {
+  border: none;
+  background: none;
+  display: flex;
+  display: none;
+}
+
+.menuBtn {
+  height: 40px;
+  width: 40px;
+}
+.closeBtn {
+  height: 40px;
+  width: 40px;
+  opacity: 0;
+  transition: 1s;
+  /* display: none; */
+}
+
+@media (max-width: 999px) {
+  .navListItem {
+    position: absolute;
+    background-color: #f8edeb;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    top: 0;
+    left: 0;
+  }
+  .navListBtn {
+    font-size: 6rem;
+  }
+  .btnIconBox {
+    /* position: absolute; */
+    /* margin-top: -1070px;
+    margin-left: 905px; */
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+}
+
+.show {
+  opacity: 1;
+  transition: 2s;
+  transform: translateY(-5%);
+}
+.hidden {
+  opacity: 0;
+}
+.notHidden {
+  display: block;
+}
+/* ==== */
+
+.hero_Main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.hero_Font {
+  font-family: "Raleway", sans-serif;
+  font-size: 6rem;
+  display: inline-block;
+  font-weight: 800;
+  line-height: 120px;
+}
+.hero_Sub_Font {
+  font-family: "Raleway", sans-serif;
+  display: block;
+  font-size: 6rem;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+.hero_Button {
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+  padding: 0.5rem;
+  margin-left: 373px;
+  background-color: #137547;
+  color: #baf4d9;
+  border-radius: 6px;
+}
+.hero_Button:hover {
+  color: black;
+}
+.hero_Photo {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.about_Us_List {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid black;
+}
+
+.about_Us_Title {
+  font-size: 6rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 120px;
+  letter-spacing: 6px;
+  font-weight: 700;
+}
+
+.about_Us_Info {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 80px;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+.article-Sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+}
+
+.menu-Main-Font {
+  font-size: 6rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 120px;
+  letter-spacing: 6px;
+  font-weight: 700;
+}
+.menu-Sub-Font {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 80px;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+.menu-Photo {
+  width: 100%;
+  border-radius: 5px;
+  align-self: stretch;
+}
+.article-List {
+  align-self: end;
+}
+
+.menu-Main-Font-2 {
+  font-size: 6rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 120px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  align-self: flex-end;
+}
+.menu-Sub-Font-2 {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 80px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  align-self: end;
+}
+
+.gallery-Main-Font {
+  font-size: 6rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 120px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  text-align: center;
+}
+.gallery-Sub-Font {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 80px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  text-align: center;
+}
+.gallery-Photo-Main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.gallery-Photo {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.contact-Main {
+  background-color: #506e54;
+}
+.contact-Font-Main {
+  font-size: 6rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 120px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+.contact-Font-Sub {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 120px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 1795px) {
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 5.5rem;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 120px;
+  }
+  .hero_Sub_Font {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 4.5rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+  }
+  .about_Us_Title {
+    font-size: 5.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .about_Us_Info {
+    font-size: 4.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Main-Font {
+    font-size: 5.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Sub-Font {
+    font-size: 4.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .gallery-Main-Font {
+    font-size: 5.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .gallery-Sub-Font {
+    font-size: 4.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .contact-Font-Main {
+    font-size: 5.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  .contact-Font-Sub {
+    font-size: 4.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media (max-width: 1646px) {
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 5rem;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 120px;
+  }
+  .hero_Sub_Font {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 3.9rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+  }
+  .about_Us_Title {
+    font-size: 5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .about_Us_Info {
+    font-size: 3.9rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Main-Font {
+    font-size: 5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Sub-Font {
+    font-size: 3.9rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .gallery-Main-Font {
+    font-size: 5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .gallery-Sub-Font {
+    font-size: 3.9rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .contact-Font-Main {
+    font-size: 5.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  .contact-Font-Sub {
+    font-size: 3.9rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media (max-width: 1496px) {
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 4.8rem;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 120px;
+  }
+  .hero_Sub_Font {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 3.4rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+  }
+  .about_Us_Title {
+    font-size: 4.2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .about_Us_Info {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Main-Font {
+    font-size: 4.2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Main-Font-2 {
+    font-size: 4.2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Sub-Font {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Sub-Font-2 {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .gallery-Main-Font {
+    font-size: 4.2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .gallery-Sub-Font {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .contact-Font-Main {
+    font-size: 4.2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  .contact-Font-Sub {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media (max-width: 1436px) {
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 4.4rem;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 120px;
+  }
+  .hero_Sub_Font {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+  }
+  .about_Us_Title {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .about_Us_Info {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Main-Font {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Main-Font-2 {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Sub-Font {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Sub-Font-2 {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .gallery-Main-Font {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .gallery-Sub-Font {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .contact-Font-Main {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  .contact-Font-Sub {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media (max-width: 1316px) {
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 120px;
+  }
+  .hero_Sub_Font {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+  }
+  .about_Us_Title {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .about_Us_Info {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Main-Font {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Main-Font-2 {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Sub-Font {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Sub-Font-2 {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .gallery-Main-Font {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .gallery-Sub-Font {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .contact-Font-Main {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  .contact-Font-Sub {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media (max-width: 1197px) {
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 3.8rem;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 80px;
+  }
+  .hero_Sub_Font {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+  }
+  .about_Us_Title {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .about_Us_Info {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Main-Font {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Main-Font-2 {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Sub-Font {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Sub-Font-2 {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .gallery-Main-Font {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .gallery-Sub-Font {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .contact-Font-Main {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  .contact-Font-Sub {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media (max-width: 1137px) {
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 3.4rem;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 80px;
+  }
+  .hero_Sub_Font {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+  }
+  .about_Us_Title {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .about_Us_Info {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Main-Font {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Main-Font-2 {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .menu-Sub-Font {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Sub-Font-2 {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .gallery-Main-Font {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .gallery-Sub-Font {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .contact-Font-Main {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+  .contact-Font-Sub {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 80px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+}
+@media (max-width: 1017px) {
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 3.2rem;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 80px;
+  }
+}
+@media (max-width: 950px) {
+  .hero_Main {
+    display: block;
+    /* grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center; */
+    margin-bottom: 2rem;
+  }
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 6.5rem;
+    text-align: center;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 80px;
+  }
+  .hero_Sub_Font {
+    font-family: "Raleway", sans-serif;
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  .hero_Button {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    margin-left: 434px;
+    background-color: #137547;
+    color: #baf4d9;
+    border-radius: 6px;
+  }
+  .about_Us_List {
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid black;
+  }
+  .about_Us_List {
+    display: block;
+    border-bottom: 1px solid black;
+  }
+  .about_Us_List {
+    display: block;
+    border-bottom: 1px solid black;
+  }
+  .about_Us_Title {
+    font-size: 4rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+  .about_Us_Info {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 903px) {
+  .hero_Button {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    margin-left: 386px;
+    background-color: #137547;
+    color: #baf4d9;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 830px) {
+  .hero_Button {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    margin-left: 335px;
+    background-color: #137547;
+    color: #baf4d9;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 750px) {
+  .hero_Button {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    margin-left: 295px;
+    background-color: #137547;
+    color: #baf4d9;
+    border-radius: 6px;
+  }
+  .article-Sub {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .menu-Main-Font {
+    font-size: 4rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .menu-Sub-Font {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .menu-Main-Font-2 {
+    font-size: 4rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .menu-Sub-Font-2 {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .gallery-Main-Font {
+    font-size: 4rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .gallery-Sub-Font {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .gallery-Photo-Main {
+    display: block;
+
+    gap: 2rem;
+  }
+}
+@media (max-width: 660px) {
+  .hero_Button {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    margin-left: 256px;
+    background-color: #137547;
+    color: #baf4d9;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 590px) {
+  .hero_Button {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    margin-left: 235px;
+    background-color: #137547;
+    color: #baf4d9;
+    border-radius: 6px;
+  }
+  .about_Us_Title {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+
+  .about_Us_Info {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  .menu-Main-Font {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .menu-Sub-Font {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .menu-Main-Font-2 {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .menu-Sub-Font-2 {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+@media (max-width: 540px) {
+  .hero_Button {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    margin-left: 194px;
+    background-color: #137547;
+    color: #baf4d9;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 470px) {
+  .hero_Button {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    margin-left: 170px;
+    background-color: #137547;
+    color: #baf4d9;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 420px) {
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 80px;
+  }
+  .hero_Button {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    margin-left: 134px;
+    background-color: #137547;
+    color: #baf4d9;
+    border-radius: 6px;
+  }
+}
+@media (max-width: 350px) {
+  .hero_Button {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    margin-left: 105px;
+    background-color: #137547;
+    color: #baf4d9;
+    border-radius: 6px;
+  }
+  .about_Us_Title {
+    font-size: 3.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 50px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+}

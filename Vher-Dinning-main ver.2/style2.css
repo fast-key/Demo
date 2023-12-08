@@ -1,0 +1,13 @@
+.show {
+  opacity: 1;
+}
+
+.test_button2 {
+  display: none;
+}
+.nothide {
+  display: block;
+}
+.hide {
+  display: none;
+}
