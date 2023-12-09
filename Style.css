@@ -1120,6 +1120,15 @@ main {
     border-radius: 6px;
   }
 }
+@media (max-width: 440px) {
+  .about_Us_Title {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+}
 @media (max-width: 420px) {
   .hero_Font {
     font-family: "Raleway", sans-serif;
@@ -1137,6 +1146,41 @@ main {
     background-color: #137547;
     color: #baf4d9;
     border-radius: 6px;
+  }
+}
+@media (max-width: 394px) {
+  .about_Us_Title {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 120px;
+    letter-spacing: 6px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 377px) {
+  .hero_Font {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 40px;
+  }
+  .menu-Main-Font {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .menu-Main-Font-2 {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 40px;
+    letter-spacing: 6px;
+    font-weight: 700;
+    text-align: center;
   }
 }
 @media (max-width: 350px) {
